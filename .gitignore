@@ -8,7 +8,7 @@ venv311/
 qwen2.5-0.5b-mlx-int4/
 qwen2.5-0.5b-fp16/
 docs/
-chromadb/
+chroma_db/
 .vscode/
 feature_pipeline/
 monitoring/
