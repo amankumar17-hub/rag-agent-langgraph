@@ -1,0 +1,218 @@
+[
+  {
+    "id": "q1",
+    "question": "What is Apple's current stock price?",
+    "response": "Apple\u2019s current stock price is **$305.59** per share.",
+    "keyword_score": {
+      "score": 0.5714285714285714,
+      "keyword_hits": {
+        "AAPL": false,
+        "$": true,
+        "market cap": false,
+        "volume": false
+      },
+      "negative_hits": {
+        "I don't know": true,
+        "unable to": true,
+        "error": true
+      }
+    },
+    "tool_score": {
+      "score": 1.0,
+      "detail": {
+        "get_stock_price": true
+      },
+      "redundant_calls": {},
+      "total_tool_calls": 1
+    },
+    "latency_score": {
+      "score": 1.0,
+      "elapsed": 3.57,
+      "label": "good"
+    },
+    "overall_score": 0.86
+  },
+  {
+    "id": "q2",
+    "question": "What sector is Apple in?",
+    "response": "Apple Inc. operates in the **Technology** sector.",
+    "keyword_score": {
+      "score": 0.8,
+      "keyword_hits": {
+        "Technology": true,
+        "sector": true,
+        "industry": false
+      },
+      "negative_hits": {
+        "I don't know": true,
+        "unable to": true
+      }
+    },
+    "tool_score": {
+      "score": 1.0,
+      "detail": {
+        "get_company_info": true
+      },
+      "redundant_calls": {},
+      "total_tool_calls": 1
+    },
+    "latency_score": {
+      "score": 1.0,
+      "elapsed": 1.34,
+      "label": "good"
+    },
+    "overall_score": 0.93
+  },
+  {
+    "id": "q3",
+    "question": "What is Apple's P/E ratio and what does it mean?",
+    "response": "**Apple Inc. (AAPL) \u2013 Current P/E Ratio**\n\n- **P/E Ratio:** **35.08**\n\n---\n\n### What the P/E Ratio Means\n\n| Element | Explanation |\n|---------|-------------|\n| **Price\u2011to\u2011Earnings (P/E) Ratio** | The ",
+    "keyword_score": {
+      "score": 1.0,
+      "keyword_hits": {
+        "P/E": true,
+        "earnings": true,
+        "price": true
+      },
+      "negative_hits": {
+        "I don't know": true,
+        "unable to": true
+      }
+    },
+    "tool_score": {
+      "score": 1.0,
+      "detail": {
+        "get_financial_metrics": true
+      },
+      "redundant_calls": {},
+      "total_tool_calls": 1
+    },
+    "latency_score": {
+      "score": 1.0,
+      "elapsed": 2.1,
+      "label": "good"
+    },
+    "overall_score": 1.0
+  },
+  {
+    "id": "q4",
+    "question": "Is Apple trading closer to its 52-week high or low right now?",
+    "response": "Apple is trading closer to its 52\u2011week high.  \n- **52\u2011week high:** $344.57  \n- **52\u2011week low:** $223.78  \n- **Current price:** $305.59  \n\nThe price is $38.98 below the high but $81.81 above the low, s",
+    "keyword_score": {
+      "score": 0.8333333333333334,
+      "keyword_hits": {
+        "52-week": false,
+        "high": true,
+        "low": true,
+        "current": true
+      },
+      "negative_hits": {
+        "I don't know": true,
+        "unable to": true
+      }
+    },
+    "tool_score": {
+      "score": 1.0,
+      "detail": {
+        "get_financial_metrics": true,
+        "get_stock_price": true
+      },
+      "redundant_calls": {},
+      "total_tool_calls": 2
+    },
+    "latency_score": {
+      "score": 1.0,
+      "elapsed": 2.7,
+      "label": "good"
+    },
+    "overall_score": 0.94
+  },
+  {
+    "id": "q5",
+    "question": "Should I buy Apple stock right now?",
+    "response": "**Apple Inc. (AAPL) \u2013 Quick Snapshot (as of the latest data)**  \n\n| Item | Value |\n|------|-------|\n| Current price | **$305.59** |\n| 52\u2011week high / low | **$344.57 / $223.78** |\n| P/E ratio | **35.08",
+    "keyword_score": {
+      "score": 1.0,
+      "keyword_hits": {
+        "P/E": true,
+        "price": true,
+        "risk": true
+      },
+      "negative_hits": {
+        "I don't know": true
+      }
+    },
+    "tool_score": {
+      "score": 1.0,
+      "detail": {
+        "get_stock_price": true,
+        "get_financial_metrics": true
+      },
+      "redundant_calls": {},
+      "total_tool_calls": 3
+    },
+    "latency_score": {
+      "score": 1.0,
+      "elapsed": 4.62,
+      "label": "good"
+    },
+    "overall_score": 1.0
+  },
+  {
+    "id": "q6",
+    "question": "What is the weather like today?",
+    "response": "I\u2019m sorry, but I don\u2019t have access to current weather information. If you have any financial\u2011related questions, feel free to ask!",
+    "keyword_score": {
+      "score": 1.0,
+      "keyword_hits": {},
+      "negative_hits": {
+        "$": true,
+        "AAPL": true,
+        "stock": true
+      }
+    },
+    "tool_score": {
+      "score": 1.0,
+      "detail": {},
+      "redundant_calls": {},
+      "total_tool_calls": 0
+    },
+    "latency_score": {
+      "score": 1.0,
+      "elapsed": 0.52,
+      "label": "good"
+    },
+    "overall_score": 1.0
+  },
+  {
+    "id": "q7",
+    "question": "What is Apple's beta and what does it tell us about risk?",
+    "response": "**Apple\u2019s beta (\u2248\u202f1.2)**  \n> *Note: The exact number can vary slightly depending on the data source and the period used, but most recent calculations put Apple\u2019s beta around **1.2**.*\n\n---\n\n### What b",
+    "keyword_score": {
+      "score": 1.0,
+      "keyword_hits": {
+        "beta": true,
+        "risk": true,
+        "market": true,
+        "volatility": true
+      },
+      "negative_hits": {
+        "I don't know": true
+      }
+    },
+    "tool_score": {
+      "score": 0.0,
+      "detail": {
+        "get_financial_metrics": false
+      },
+      "redundant_calls": {},
+      "total_tool_calls": 0
+    },
+    "latency_score": {
+      "score": 1.0,
+      "elapsed": 1.53,
+      "label": "good"
+    },
+    "overall_score": 0.67
+  }
+]
